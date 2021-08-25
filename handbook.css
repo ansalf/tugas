@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+/*@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css); */
+@charset "UTF-8";
+body{
+    background:white;
+}
+
+#sidebar{
+    float: left;
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    position: scrolling;
+}
+
+#article{
+    /* float: right; width:800px; */
+    margin-left: 100px;
+    /* margin-top: -200px; */
+}
+ /* card  */
+.listings__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 8px;
+    grid-row-gap: 24px;
+  }
+  
+  .card {
+    background-color:#FBFBFB;
+    padding: 16px;
+    border:none;
+    max-width: 260px;
+    border-radius: 2px;
+  }
+  
+  .card__logo {
+    border-radius: none;
+    height: 64px;
+    width: 64px;
+    margin: 4px 0;
+  }
+  
+  .card__heading {
+    color: black;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  .card__text {
+    color: rgb(66, 64, 64);
+    font-size: 14px;
+  }
+  
+  .card__text--small {
+    font-size: 12px;
+  }
+  
+  .card__separator {
+    width: 32px;
+    border: none;
+    border-top: none;
+    height: 1px;
+    margin: 8px 0;
+  }
+/* logo sekolah */
+  .galleryLogo{
+    display: inline-flex;
+    width:100px;
+    height: 100px;
+    padding:10px;
+    text-align: center;
+    margin-right: 0px;
+    position: center;
+    float: left;
+    width: 100%;
+    clear: both;
+    padding-bottom: 7px;
+    padding-top: 10px;
+    color: #7c7c7c;
+    background: #dbdbdb;
+    font-size: 12px;
+}
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+background-color: rgb(226, 226, 226);
+min-height: 200px;
+}
+
+.flex-container > div {
+background-color: white;
+width: 130px;
+margin: 10px;
+text-align: center;
+line-height: 200px;
+font-size: 30px;
+}
+
+*,
+*:before,
+*:after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* side */
+#v-pills-tab .nav-link {
+  color: #000000 !important;
+  background: #f1f1f1 !important;
+  position: relative;
+  shadow: none !important;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #000000;
+  background: #fff;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #fff;
+      border-bottom: 8px solid transparent;
+      position: relative;
+      /* top: 50%; */
+      right: -10px;
+      /* transform: translateY(-50%); */
+      opacity: 0;
+      font-weight: bold;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+  font-weight: bold;
+}
+
+/*
+a.one:hover{
+  text-decoration:none !important;
+  font-weight:bold !important;
+  cursor:default !important;
+}
+*/
+/* unvisited link */
+a.one:link {
+  color:grey;
+}
+
+/* visited link */
+a.one:visited {
+  color: grey;
+}
+
+/* mouse over link */
+a.one:hover {
+  text-decoration:none !important;
+  font-weight:bold !important;
+  cursor:default !important;
+  color:black ;
+}
+
+/* selected link */
+a.one:active {
+  color: grey;
+}
+
